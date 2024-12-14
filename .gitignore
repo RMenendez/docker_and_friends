@@ -1,0 +1,10 @@
+db.sqlite3
+geckodriver.log
+__pycache__
+.pyc
+/static
+src/db.sqlite3
+src/static
+.coverage
+coverage_examples
+
