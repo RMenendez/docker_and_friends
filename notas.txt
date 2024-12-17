@@ -45,3 +45,9 @@ or
 7
 
 
+Run redis container and then flask application image (image page-tracker:xxxxx)
+
+docker run -d -v redis-volume:/data --network page-tracker-network --name redis-service redis:7-alpine
+
+docker run -d -p 80:5000 -e REDIS_URL=redis://redis-service:6379 --network page-tracker-network --name web-service rmgiacomini/page-tracker
+
