@@ -9,7 +9,9 @@ name = "page-tracker"
 version = "1.0.0"
 dependencies = [
     "Flask",
+    "gunicorn",
     "redis",
+
 ]
 
 [project.optional-dependencies]
