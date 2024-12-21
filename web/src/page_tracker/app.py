@@ -18,7 +18,7 @@ def index():
 
     except RedisError:
         app.logger.exception("Redis error")
-        return "Sorry, something went wrong \N{pensive face}", 500
+        return "Sorry, something went wrong \N{thinking face}", 500
 
 
 @cache
